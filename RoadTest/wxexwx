@@ -1,0 +1,4 @@
+ // edge case from discussion 4, slide 37
+forkCar(10, EAST, 120);
+forkCar(20, WEST, 120);
+driveRoad(WEST, 10); // blocks

@@ -1,0 +1,6 @@
+for (i = 0; i < 3; i++)
+  forkCar(0, WEST, 120);
+for (i = 0; i < 3; i++)
+  forkCar(100, EAST, 120);
+for (i = 0; i < 3; i++)
+  forkCar(200, WEST, 120);

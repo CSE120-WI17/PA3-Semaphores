@@ -1,0 +1,19 @@
+for(i = 0; i < 9; ++i){
+  if(!Fork()){
+    Delay(0);
+    driveRoad(EAST, 120);
+    Exit();
+  }
+}
+/* Car 1 for loop 1 */
+driveRoad(EAST, 120);
+Delay(2000);
+for(i = 0; i < 9; ++i){
+  if(!Fork()){
+    Delay(0);
+    driveRoad(WEST, 120);
+    Exit();
+  }
+}
+/* Car 1 for loop 2 */
+driveRoad(WEST, 120);

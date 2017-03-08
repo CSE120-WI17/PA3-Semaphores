@@ -1,0 +1,41 @@
+if (!Fork()) {
+Delay(0); // car 2 should be in the road as well
+driveRoad(WEST, 60);
+Exit();
+}
+
+if (!Fork()) {
+Delay(300); // now car 3 should wait until car 1 and car 2 finish   |||    Note: it means.. it will be ran after 600 DelayTime
+driveRoad(EAST, 60);
+Exit();
+}
+
+if (!Fork()) {
+Delay(600); // car 4 will be on the road with 3   ||| Note: this is good test... to check if you can avoid car 4 hitting 3 at the initial position
+driveRoad(EAST, 60);
+Exit();
+}
+if (!Fork()) {
+Delay(900); // car 5 will wait until 3&4 finish.. since its opposite direction    ||| Note: It will arrive when 3&4 is already on the road
+driveRoad(WEST, 60);
+Exit();
+}
+if (!Fork()) {
+Delay(1000); // car 6 will enter after car 5
+driveRoad(EAST, 60);
+Exit();
+}
+
+if (!Fork()) {
+Delay(1450); // car 7  is already waiting... but car 8 will be out first.  
+driveRoad(EAST, 60);
+Exit();
+}
+if (!Fork()) {
+Delay(1700); // car 8 arrives after car 7... but it will be on the road before car 7
+driveRoad(WEST, 60);
+Exit();
+}
+
+driveRoad(WEST, 60); // car 1 on the road
+Exit();

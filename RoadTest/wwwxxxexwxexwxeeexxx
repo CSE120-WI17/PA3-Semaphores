@@ -1,0 +1,10 @@
+// 3 west (not including the last call)
+for (i = 0; i < 2; i++)
+  forkCar(0, WEST, 120);
+// 5 east
+for (i = 0; i < 5; i++)
+  forkCar(200, EAST, 120);
+// 2 west
+for (i = 0; i < 2; i++)
+  forkCar(220, WEST, 120);
+driveRoad(WEST, 120); // blocks

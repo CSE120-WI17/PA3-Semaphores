@@ -1,0 +1,3 @@
+for (i = 0; i < 9; i++)
+  forkCar(0, EAST, 120);
+driveRoad(EAST, 120);

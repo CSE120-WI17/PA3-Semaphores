@@ -1,0 +1,5 @@
+forkCar(0, WEST, 120);
+forkCar(100, EAST, 120);
+forkCar(200, WEST, 120);
+forkCar(220, WEST, 60);
+forkCar(240, EAST, 60);
